@@ -25,14 +25,16 @@ Partial Class ICBC_MainForm
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.lblAccountName = New System.Windows.Forms.Label()
-        Me.lblBankName = New System.Windows.Forms.Label()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.lblKeyPass = New System.Windows.Forms.Label()
+        Me.lblBankName = New System.Windows.Forms.Label()
+        Me.lblAccountName = New System.Windows.Forms.Label()
+        Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.GroupBox1.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -78,17 +80,29 @@ Partial Class ICBC_MainForm
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Transaction Type"
         '
-        'WebBrowser1
+        'GroupBox4
         '
-        Me.WebBrowser1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.WebBrowser1.Location = New System.Drawing.Point(0, 63)
-        Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
-        Me.WebBrowser1.Name = "WebBrowser1"
-        Me.WebBrowser1.Size = New System.Drawing.Size(795, 347)
-        Me.WebBrowser1.TabIndex = 4
-        Me.WebBrowser1.Url = New System.Uri("http://localhost/mownecum", System.UriKind.Absolute)
+        Me.GroupBox4.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox4.Controls.Add(Me.ComboBox1)
+        Me.GroupBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.GroupBox4.Location = New System.Drawing.Point(6, 182)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(255, 162)
+        Me.GroupBox4.TabIndex = 2
+        Me.GroupBox4.TabStop = False
+        Me.GroupBox4.Text = "Payment Information"
+        '
+        'GroupBox3
+        '
+        Me.GroupBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.GroupBox3.Location = New System.Drawing.Point(6, 131)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(255, 45)
+        Me.GroupBox3.TabIndex = 1
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "View List"
         '
         'GroupBox2
         '
@@ -106,38 +120,15 @@ Partial Class ICBC_MainForm
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Bank Information"
         '
-        'GroupBox3
+        'lblKeyPass
         '
-        Me.GroupBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.GroupBox3.Location = New System.Drawing.Point(6, 131)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(255, 45)
-        Me.GroupBox3.TabIndex = 1
-        Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "View List"
-        '
-        'GroupBox4
-        '
-        Me.GroupBox4.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.GroupBox4.Location = New System.Drawing.Point(6, 182)
-        Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(255, 162)
-        Me.GroupBox4.TabIndex = 2
-        Me.GroupBox4.TabStop = False
-        Me.GroupBox4.Text = "Payment Information"
-        '
-        'lblAccountName
-        '
-        Me.lblAccountName.AutoSize = True
-        Me.lblAccountName.ForeColor = System.Drawing.Color.Black
-        Me.lblAccountName.Location = New System.Drawing.Point(18, 25)
-        Me.lblAccountName.Name = "lblAccountName"
-        Me.lblAccountName.Size = New System.Drawing.Size(81, 13)
-        Me.lblAccountName.TabIndex = 0
-        Me.lblAccountName.Text = "Account Name:"
+        Me.lblKeyPass.AutoSize = True
+        Me.lblKeyPass.ForeColor = System.Drawing.Color.Black
+        Me.lblKeyPass.Location = New System.Drawing.Point(10, 71)
+        Me.lblKeyPass.Name = "lblKeyPass"
+        Me.lblKeyPass.Size = New System.Drawing.Size(88, 13)
+        Me.lblKeyPass.TabIndex = 2
+        Me.lblKeyPass.Text = "U Key Password:"
         '
         'lblBankName
         '
@@ -149,15 +140,35 @@ Partial Class ICBC_MainForm
         Me.lblBankName.TabIndex = 1
         Me.lblBankName.Text = "Bank Name:"
         '
-        'lblKeyPass
+        'lblAccountName
         '
-        Me.lblKeyPass.AutoSize = True
-        Me.lblKeyPass.ForeColor = System.Drawing.Color.Black
-        Me.lblKeyPass.Location = New System.Drawing.Point(10, 71)
-        Me.lblKeyPass.Name = "lblKeyPass"
-        Me.lblKeyPass.Size = New System.Drawing.Size(88, 13)
-        Me.lblKeyPass.TabIndex = 2
-        Me.lblKeyPass.Text = "U Key Password:"
+        Me.lblAccountName.AutoSize = True
+        Me.lblAccountName.ForeColor = System.Drawing.Color.Black
+        Me.lblAccountName.Location = New System.Drawing.Point(18, 25)
+        Me.lblAccountName.Name = "lblAccountName"
+        Me.lblAccountName.Size = New System.Drawing.Size(81, 13)
+        Me.lblAccountName.TabIndex = 0
+        Me.lblAccountName.Text = "Account Name:"
+        '
+        'WebBrowser1
+        '
+        Me.WebBrowser1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.WebBrowser1.Location = New System.Drawing.Point(0, 63)
+        Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
+        Me.WebBrowser1.Name = "WebBrowser1"
+        Me.WebBrowser1.Size = New System.Drawing.Size(795, 347)
+        Me.WebBrowser1.TabIndex = 4
+        Me.WebBrowser1.Url = New System.Uri("http://localhost/mownecum", System.UriKind.Absolute)
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(57, 52)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(144, 21)
+        Me.ComboBox1.TabIndex = 0
         '
         'ICBC_MainForm
         '
@@ -173,6 +184,7 @@ Partial Class ICBC_MainForm
         Me.Name = "ICBC_MainForm"
         Me.Text = "ICBC Client"
         Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox4.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
@@ -188,5 +200,6 @@ Partial Class ICBC_MainForm
     Friend WithEvents lblKeyPass As System.Windows.Forms.Label
     Friend WithEvents lblBankName As System.Windows.Forms.Label
     Friend WithEvents lblAccountName As System.Windows.Forms.Label
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
 
 End Class
