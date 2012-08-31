@@ -32,9 +32,7 @@ Partial Class ICBC_MainForm
         Me.lblBankName = New System.Windows.Forms.Label()
         Me.lblAccountName = New System.Windows.Forms.Label()
         Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.GroupBox1.SuspendLayout()
-        Me.GroupBox4.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -83,7 +81,6 @@ Partial Class ICBC_MainForm
         'GroupBox4
         '
         Me.GroupBox4.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox4.Controls.Add(Me.ComboBox1)
         Me.GroupBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.GroupBox4.Location = New System.Drawing.Point(6, 182)
@@ -162,14 +159,6 @@ Partial Class ICBC_MainForm
         Me.WebBrowser1.TabIndex = 4
         Me.WebBrowser1.Url = New System.Uri("http://localhost/mownecum", System.UriKind.Absolute)
         '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(57, 52)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(144, 21)
-        Me.ComboBox1.TabIndex = 0
-        '
         'ICBC_MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -184,7 +173,6 @@ Partial Class ICBC_MainForm
         Me.Name = "ICBC_MainForm"
         Me.Text = "ICBC Client"
         Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox4.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
@@ -200,6 +188,5 @@ Partial Class ICBC_MainForm
     Friend WithEvents lblKeyPass As System.Windows.Forms.Label
     Friend WithEvents lblBankName As System.Windows.Forms.Label
     Friend WithEvents lblAccountName As System.Windows.Forms.Label
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
 
 End Class
