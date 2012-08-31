@@ -1,0 +1,11 @@
+G:\SourceCode\ICBC_Project\ICBC_Client_Main\bin\Debug\ICBC_Client_Main.exe
+G:\SourceCode\ICBC_Project\ICBC_Client_Main\bin\Debug\ICBC_Client_Main.pdb
+G:\SourceCode\ICBC_Project\ICBC_Client_Main\bin\Debug\ICBC_Client_Main.xml
+G:\SourceCode\ICBC_Project\ICBC_Client_Main\obj\x86\Debug\ResolveAssemblyReference.cache
+G:\SourceCode\ICBC_Project\ICBC_Client_Main\obj\x86\Debug\ICBC_Client_Main.Resources.resources
+G:\SourceCode\ICBC_Project\ICBC_Client_Main\obj\x86\Debug\GenerateResource.read.1.tlog
+G:\SourceCode\ICBC_Project\ICBC_Client_Main\obj\x86\Debug\GenerateResource.write.1.tlog
+G:\SourceCode\ICBC_Project\ICBC_Client_Main\obj\x86\Debug\ICBC_Client_Main.exe
+G:\SourceCode\ICBC_Project\ICBC_Client_Main\obj\x86\Debug\ICBC_Client_Main.xml
+G:\SourceCode\ICBC_Project\ICBC_Client_Main\obj\x86\Debug\ICBC_Client_Main.pdb
+G:\SourceCode\ICBC_Project\ICBC_Client_Main\obj\x86\Debug\ICBC_Client_Main.ICBC_MainForm.resources
